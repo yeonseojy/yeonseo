@@ -1,0 +1,44 @@
+@charset="utf-8";
+*{margin:0;padding:0;}
+body{
+background: linear-gradient(to bottom, #5a4089, #885196);
+}
+div img{
+  margin:0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fixed{
+  position: fixed;
+  right:100px;
+  bottom:100px;
+}
+.fixed:hover{
+  opacity:0.8;
+}
+.fixed2{
+  position: fixed;
+  right:100px;
+  bottom:40px;
+}
+.fixed2:hover{
+  opacity:0.8;
+}
+.cloud img:nth-child(1){
+  position: fixed;
+  left: -10%;
+  top: 45%;
+  animation: cloud 10s infinite 1s ease;
+}
+.cloud img:nth-child(2){
+  position: fixed;
+  right: -5%;
+  top: 30%;
+  animation: cloud 10s infinite;
+}
+@keyframes cloud{
+  0%{transform: translate(0,0);}
+  50%{transform: translate(0,50px);}
+  100%{transform: translate(0,0);}
+}
